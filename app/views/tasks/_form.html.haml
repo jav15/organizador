@@ -9,7 +9,7 @@
     = f.input :due_date
     = f.association :category
     #addParticipants
-      = link_to_add_association 'Add Question', f, :participating_users, partial: 'participating_user_fields'
+      = link_to_add_association 'Agregar Participante', f, :participating_users, partial: 'participating_user_fields'
 
     .participants
       = f.simple_fields_for :participating_users do |g|
